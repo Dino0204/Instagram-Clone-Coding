@@ -1,0 +1,295 @@
+[
+  {
+    "id": "post_001",
+    "user": {
+      "id": "user_123",
+      "username": "travel_lover",
+      "full_name": "Sarah Kim",
+      "profile_picture": "https://example.com/profiles/sarahkim.jpg"
+    },
+    "image_url": "https://example.com/posts/pasta_homemade.jpg",
+    "caption": "제주도에서의 완벽한 일몰. 이런 순간이 인생을 특별하게 만들어요. #제주도 #일몰 #여행스타그램",
+    "location": {
+      "name": "제주도 협재해변",
+      "id": "location_001"
+    },
+    "created_at": "2025-04-10T18:30:25Z",
+    "likes_count": 1243,
+    "comments": [
+      {
+        "id": "comment_001",
+        "user": "beach_bum",
+        "text": "와 정말 아름답네요! 저도 곧 제주도 갈 예정인데 꼭 가봐야겠어요.",
+        "created_at": "2025-04-10T18:45:12Z"
+      },
+      {
+        "id": "comment_002",
+        "user": "photo_master",
+        "text": "구도가 정말 예술이에요! 카메라 정보 알 수 있을까요?",
+        "created_at": "2025-04-10T19:02:37Z"
+      }
+    ],
+    "tags": ["제주도", "일몰", "여행스타그램", "자연", "풍경사진"]
+  },
+  {
+    "id": "post_002",
+    "user": {
+      "id": "user_456",
+      "username": "food_diary",
+      "full_name": "Min-jun Park",
+      "profile_picture": "https://example.com/profiles/minjun.jpg"
+    },
+    "image_url": "https://example.com/posts/pasta_homemade.jpg",
+    "caption": "오늘의 홈메이드 파스타 🍝 토마토 소스에 신선한 바질을 넣으니 향이 정말 좋아요! #홈쿡 #파스타 #맛스타그램",
+    "location": {
+      "name": "My Home Kitchen",
+      "id": "location_002"
+    },
+    "created_at": "2025-04-12T12:15:33Z",
+    "likes_count": 876,
+    "comments": [
+      {
+        "id": "comment_003",
+        "user": "pasta_lover",
+        "text": "와 정말 맛있어 보여요! 레시피 공유해주실 수 있나요?",
+        "created_at": "2025-04-12T12:30:45Z"
+      }
+    ],
+    "tags": ["홈쿡", "파스타", "맛스타그램", "요리", "토마토파스타"]
+  },
+  {
+    "id": "post_003",
+    "user": {
+      "id": "user_789",
+      "username": "fitness_junkie",
+      "full_name": "Ji-woo Lee",
+      "profile_picture": "https://example.com/profiles/jiwoo.jpg"
+    },
+    "image_url": "https://example.com/posts/morning_workout.jpg",
+    "caption": "아침 운동으로 하루를 시작해요. 건강한 습관이 건강한 인생을 만듭니다. 💪 #모닝루틴 #운동스타그램 #헬스타그램",
+    "location": {
+      "name": "강남 피트니스 센터",
+      "id": "location_003"
+    },
+    "created_at": "2025-04-14T06:20:18Z",
+    "likes_count": 542,
+    "comments": [
+      {
+        "id": "comment_004",
+        "user": "gym_rat",
+        "text": "운동 루틴 좀 공유해주세요!",
+        "created_at": "2025-04-14T06:35:22Z"
+      },
+      {
+        "id": "comment_005",
+        "user": "health_nut",
+        "text": "아침 운동 정말 부럽네요. 저도 도전해봐야겠어요.",
+        "created_at": "2025-04-14T07:10:05Z"
+      }
+    ],
+    "tags": ["모닝루틴", "운동스타그램", "헬스타그램", "피트니스", "건강"]
+  },
+  {
+    "id": "post_004",
+    "user": {
+      "id": "user_101",
+      "username": "book_worm",
+      "full_name": "Yuna Kang",
+      "profile_picture": "https://example.com/profiles/yuna.jpg"
+    },
+    "image_url": "https://example.com/posts/cozy_reading.jpg",
+    "caption": "비 오는 날에는 따뜻한 차와 좋은 책이면 충분해요. 지금 읽고 있는 '작별하지 않는다'는 정말 추천합니다! 📚☕ #북스타그램 #독서 #작별하지않는다",
+    "location": {
+      "name": "우리동네 북카페",
+      "id": "location_004"
+    },
+    "created_at": "2025-04-08T15:40:12Z",
+    "likes_count": 765,
+    "comments": [
+      {
+        "id": "comment_006",
+        "user": "reader_life",
+        "text": "저도 방금 그 책 샀어요! 기대됩니다.",
+        "created_at": "2025-04-08T16:02:33Z"
+      }
+    ],
+    "tags": ["북스타그램", "독서", "작별하지않는다", "북카페", "책추천"]
+  },
+  {
+    "id": "post_005",
+    "user": {
+      "id": "user_202",
+      "username": "pet_lover",
+      "full_name": "Tae-young Choi",
+      "profile_picture": "https://example.com/profiles/taeyoung.jpg"
+    },
+    "image_url": "https://example.com/posts/cute_cat.jpg",
+    "caption": "미미의 귀여운 하품 순간 포착! 😻 오늘도 열심히 놀고 이제 잘 시간. #캣스타그램 #고양이 #반려묘",
+    "location": null,
+    "created_at": "2025-04-13T21:05:47Z",
+    "likes_count": 1534,
+    "comments": [
+      {
+        "id": "comment_007",
+        "user": "cat_mom",
+        "text": "너무 귀여워요!!! 😍😍😍",
+        "created_at": "2025-04-13T21:10:22Z"
+      },
+      {
+        "id": "comment_008",
+        "user": "animal_lover",
+        "text": "하품하는 모습이 너무 사랑스럽네요~",
+        "created_at": "2025-04-13T21:18:39Z"
+      },
+      {
+        "id": "comment_009",
+        "user": "pet_photography",
+        "text": "완벽한 타이밍! 사진 너무 잘 나왔어요.",
+        "created_at": "2025-04-13T22:05:17Z"
+      }
+    ],
+    "tags": ["캣스타그램", "고양이", "반려묘", "집사그램", "애묘"]
+  },
+  {
+    "id": "post_006",
+    "user": {
+      "id": "user_303",
+      "username": "tech_geek",
+      "full_name": "Jun-ho Kim",
+      "profile_picture": "https://example.com/profiles/junho.jpg"
+    },
+    "image_url": "https://example.com/posts/new_gadget.jpg",
+    "caption": "드디어 도착한 최신 스마트워치! 운동량 측정이랑 수면 패턴 분석이 정말 좋네요. 리뷰는 블로그에 올릴게요. #가젯 #테크 #스마트워치 #테크리뷰",
+    "location": null,
+    "created_at": "2025-04-11T14:22:55Z",
+    "likes_count": 423,
+    "comments": [
+      {
+        "id": "comment_010",
+        "user": "gadget_lover",
+        "text": "오 저도 살까 고민중인데 배터리 성능은 어때요?",
+        "created_at": "2025-04-11T14:35:12Z"
+      }
+    ],
+    "tags": ["가젯", "테크", "스마트워치", "테크리뷰", "신상"]
+  },
+  {
+    "id": "post_007",
+    "user": {
+      "id": "user_404",
+      "username": "art_daily",
+      "full_name": "Soo-jin Park",
+      "profile_picture": "https://example.com/profiles/soojin.jpg"
+    },
+    "image_url": "https://example.com/posts/watercolor_painting.jpg",
+    "caption": "오늘의 수채화 작업. 봄이 오는 소리가 들리는 것 같아요. 🎨 #아트 #수채화 #그림스타그램 #취미생활",
+    "location": {
+      "name": "서울 예술 스튜디오",
+      "id": "location_005"
+    },
+    "created_at": "2025-04-09T16:15:33Z",
+    "likes_count": 892,
+    "comments": [
+      {
+        "id": "comment_011",
+        "user": "art_lover",
+        "text": "와 색감이 정말 아름다워요! 어떤 브랜드 물감 사용하시나요?",
+        "created_at": "2025-04-09T16:30:28Z"
+      },
+      {
+        "id": "comment_012",
+        "user": "hobby_artist",
+        "text": "봄 느낌이 물씬 나네요! 너무 예뻐요 😊",
+        "created_at": "2025-04-09T17:02:14Z"
+      }
+    ],
+    "tags": ["아트", "수채화", "그림스타그램", "취미생활", "봄"]
+  },
+  {
+    "id": "post_008",
+    "user": {
+      "id": "user_505",
+      "username": "dance_life",
+      "full_name": "Hye-jin Kim",
+      "profile_picture": "https://example.com/profiles/hyejin.jpg"
+    },
+    "image_url": "https://example.com/posts/dance_practice.jpg",
+    "caption": "새로운 안무 연습 중! 다음 주 공연이 너무 기대돼요. 열심히 준비해서 좋은 모습 보여드릴게요! #댄스 #안무 #댄서 #공연준비",
+    "location": {
+      "name": "홍대 댄스 스튜디오",
+      "id": "location_006"
+    },
+    "created_at": "2025-04-14T19:45:22Z",
+    "likes_count": 1105,
+    "comments": [
+      {
+        "id": "comment_013",
+        "user": "dance_fan",
+        "text": "와 움직임이 너무 부드러워요! 공연 정보 어디서 볼 수 있나요?",
+        "created_at": "2025-04-14T20:01:17Z"
+      }
+    ],
+    "tags": ["댄스", "안무", "댄서", "공연준비", "연습"]
+  },
+  {
+    "id": "post_009",
+    "user": {
+      "id": "user_606",
+      "username": "coffee_addict",
+      "full_name": "Min-ho Lee",
+      "profile_picture": "https://example.com/profiles/minho.jpg"
+    },
+    "image_url": "https://example.com/posts/latte_art.jpg",
+    "caption": "오늘의 라떼아트 연습! 점점 나아지고 있는 것 같아요. ☕ #커피 #라떼아트 #바리스타 #카페",
+    "location": {
+      "name": "우리동네 커피숍",
+      "id": "location_007"
+    },
+    "created_at": "2025-04-12T09:30:15Z",
+    "likes_count": 754,
+    "comments": [
+      {
+        "id": "comment_014",
+        "user": "espresso_lover",
+        "text": "와 너무 예쁘네요! 어떤 원두 사용하셨어요?",
+        "created_at": "2025-04-12T09:45:33Z"
+      },
+      {
+        "id": "comment_015",
+        "user": "cafe_hopper",
+        "text": "라떼아트 실력이 정말 대단하세요! 카페 위치가 어디인가요?",
+        "created_at": "2025-04-12T10:20:19Z"
+      }
+    ],
+    "tags": ["커피", "라떼아트", "바리스타", "카페", "커피스타그램"]
+  },
+  {
+    "id": "post_010",
+    "user": {
+      "id": "user_707",
+      "username": "plant_mom",
+      "full_name": "Ji-young Seo",
+      "profile_picture": "https://example.com/profiles/jiyoung.jpg"
+    },
+    "image_url": "https://example.com/posts/house_plants.jpg",
+    "caption": "오늘 새로 들인 몬스테라! 우리 식물 가족이 또 늘었어요. 🌱 식집사의 행복한 고민은 어디에 놓을지... #식물 #몬스테라 #플랜테리어 #식집사",
+    "location": null,
+    "created_at": "2025-04-13T11:25:47Z",
+    "likes_count": 632,
+    "comments": [
+      {
+        "id": "comment_016",
+        "user": "green_thumb",
+        "text": "너무 건강해 보여요! 관리 팁 좀 알려주세요~",
+        "created_at": "2025-04-13T11:40:12Z"
+      },
+      {
+        "id": "comment_017",
+        "user": "plant_addict",
+        "text": "와 잎이 정말 예쁘네요! 어디서 구매하셨어요?",
+        "created_at": "2025-04-13T12:05:29Z"
+      }
+    ],
+    "tags": ["식물", "몬스테라", "플랜테리어", "식집사", "홈가드닝"]
+  }
+]
