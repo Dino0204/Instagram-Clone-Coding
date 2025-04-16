@@ -1,0 +1,62 @@
+[
+  {
+    "id": "user_123",
+    "username": "travel_lover",
+    "full_name": "Sarah Kim",
+    "profile_picture": "https://example.com/profiles/sarahkim.jpg"
+  },
+  {
+    "id": "user_456",
+    "username": "food_diary",
+    "full_name": "Min-jun Park",
+    "profile_picture": "https://example.com/profiles/minjun.jpg"
+  },
+  {
+    "id": "user_789",
+    "username": "fitness_junkie",
+    "full_name": "Ji-woo Lee",
+    "profile_picture": "https://example.com/profiles/jiwoo.jpg"
+  },
+  {
+    "id": "user_101",
+    "username": "book_worm",
+    "full_name": "Yuna Kang",
+    "profile_picture": "https://example.com/profiles/yuna.jpg"
+  },
+  {
+    "id": "user_202",
+    "username": "pet_lover",
+    "full_name": "Tae-young Choi",
+    "profile_picture": "https://example.com/profiles/taeyoung.jpg"
+  },
+  {
+    "id": "user_303",
+    "username": "tech_geek",
+    "full_name": "Jun-ho Kim",
+    "profile_picture": "https://example.com/profiles/junho.jpg"
+  },
+  {
+    "id": "user_404",
+    "username": "art_daily",
+    "full_name": "Soo-jin Park",
+    "profile_picture": "https://example.com/profiles/soojin.jpg"
+  },
+  {
+    "id": "user_505",
+    "username": "dance_life",
+    "full_name": "Hye-jin Kim",
+    "profile_picture": "https://example.com/profiles/hyejin.jpg"
+  },
+  {
+    "id": "user_606",
+    "username": "coffee_addict",
+    "full_name": "Min-ho Lee",
+    "profile_picture": "https://example.com/profiles/minho.jpg"
+  },
+  {
+    "id": "user_707",
+    "username": "plant_mom",
+    "full_name": "Ji-young Seo",
+    "profile_picture": "https://example.com/profiles/jiyoung.jpg"
+  }
+]

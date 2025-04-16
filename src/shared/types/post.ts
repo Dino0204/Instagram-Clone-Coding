@@ -4,6 +4,3 @@ import { PostProps } from "../../widgets/post/model";
 export interface InstagramData {
   posts: PostProps[];
 }
-
-// 예시 사용법:
-// const instagramData: InstagramData = { posts: [...] };

@@ -111,10 +111,13 @@ export const Post = ({ ...props }: PostProps) => {
         {showAllComments && (
           <div className="mt-2">
             {comments.map((comment) => (
-              <div className="flex justify-between items-start mb-2">
+              <div className="flex justify-between items-start mb-2" key={comment.id}>
                 <div>
-                  <span className="font-semibold text-sm">{comment.user}</span>
-                  <span className="text-sm ml-2">{comment.text}</span>
+                  <div className="flex gap-1">
+                    <span className="font-semibold text-sm">{comment.user}</span>
+                    <span className="font-medium text-sm">{formatDate(new Date(comment.created_at))}</span>
+                  </div>
+                  <span className="text-sm">{comment.text}</span>
                 </div>
                 <Heart size={12} />
               </div>
