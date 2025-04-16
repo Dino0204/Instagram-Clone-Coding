@@ -5,7 +5,7 @@ import { PostProps } from "../../../widgets/post/model"
 import { useState } from "react"
 
 export function Main() {
-  const { data: posts, isLoading } = useQuery<PostProps[]>({ queryKey: ["posts"], queryFn: getAllPosts })
+  const { data: posts } = useQuery<PostProps[]>({ queryKey: ["posts"], queryFn: getAllPosts })
   const [searchQuery, setSearchQuery] = useState("")
 
   const results = posts?.filter((post) =>
@@ -13,9 +13,6 @@ export function Main() {
     post.user.username.toLowerCase().includes(searchQuery.toLowerCase()) ||
     post.location?.name.toLowerCase().includes(searchQuery.toLowerCase())
   )
-
-  console.log(results?.length)
-
 
   return (
     <div className="flex flex-col ">
