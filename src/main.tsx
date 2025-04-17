@@ -13,9 +13,7 @@ const enableMocking = async () => {
 
     return worker.start({
       onUnhandledRequest: (request: Request, print) => {
-        if (!request.url.includes('/example/')) {
-          return console.warn('예시 요청 url', request.url)
-        }
+
 
         // 그 외의 처리되지 않은 요청에 대해서는 경고 출력
         print.warning()
