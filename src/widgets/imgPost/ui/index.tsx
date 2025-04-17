@@ -5,7 +5,6 @@ import { UnsplashPhoto } from '../model';
 export const ImgPost = ({ ...props }: UnsplashPhoto) => {
   const { alt_description, created_at, description, likes, urls, user, topic_submissions } = props
 
-
   const [liked, setLiked] = useState(false);
   const [saved, setSaved] = useState(false);
   const [likesCount, setLikesCount] = useState(likes);
@@ -98,7 +97,6 @@ export const ImgPost = ({ ...props }: UnsplashPhoto) => {
             <span key={key} className="mr-2">#{key}</span>
           ))}
         </div>
-
       </div>
 
       {/* 댓글 입력 */}
