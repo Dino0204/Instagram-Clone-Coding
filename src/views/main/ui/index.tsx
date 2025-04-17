@@ -17,7 +17,7 @@ export function Main() {
   return (
     <div className="flex flex-col ">
       <Header searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
-      <main className="flex flex-col gap-2 py-5">
+      <main className="flex flex-col w-full items-center gap-2 py-5">
         {results?.map((post) => (
           <Post key={post.id} {...post} />
         ))}

@@ -38,7 +38,7 @@ export const Post = ({ ...props }: PostProps) => {
   };
 
   return (
-    <div className="max-w-md mx-auto rounded shadow-xl border border-gray-300">
+    <div className="max-w-md rounded shadow-xl border border-gray-300">
       {/* 헤더 */}
       <div className="flex items-center justify-between p-3 border-b">
         <div className="flex items-center">
