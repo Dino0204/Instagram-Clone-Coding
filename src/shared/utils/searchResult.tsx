@@ -5,7 +5,6 @@ interface PostsProps {
 }
 
 export const SearchResult = (posts: PostsProps, searchQuery: string) => {
-  console.log(posts)
   const results = posts?.pages[0].filter((post: UnsplashPhoto) =>
     post.description?.toLowerCase().includes(searchQuery.toLowerCase()) ||
     post.user.username.toLowerCase().includes(searchQuery.toLowerCase()) ||
