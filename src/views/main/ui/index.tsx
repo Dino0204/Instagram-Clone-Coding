@@ -1,4 +1,4 @@
-import { Header, ImgPost } from "../../../widgets"
+import { Header, Post } from "../../../widgets"
 import { getAllImagesByPage } from "../../../shared/apis/getAllPosts"
 import { UnsplashPhoto } from "../../../widgets/post/model"
 import { useInfiniteQuery } from "@tanstack/react-query"
@@ -24,7 +24,7 @@ export function Main() {
       <Header searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
       <main className="flex flex-col w-full items-center gap-2 py-5">
         {result?.map((post: UnsplashPhoto) => (
-          <ImgPost key={post.id} {...post} />
+          <Post key={post.id} {...post} />
         ))}
       </main>
     </div>

@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Heart, MessageCircle, Bookmark, Send, MoreHorizontal } from 'lucide-react';
 import { UnsplashPhoto } from '../model';
 
-export const ImgPost = ({ ...props }: UnsplashPhoto) => {
+export const Post = ({ ...props }: UnsplashPhoto) => {
   const { alt_description, created_at, description, likes, urls, user, topic_submissions } = props
 
   const [liked, setLiked] = useState(false);
