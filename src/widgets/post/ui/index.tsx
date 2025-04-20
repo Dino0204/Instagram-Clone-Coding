@@ -1,16 +1,14 @@
 import { useState } from 'react';
-import { PostProps } from "../model"
 import { Heart, MessageCircle, Bookmark, Send, MoreHorizontal } from 'lucide-react';
+import { UnsplashPhoto } from '../model';
 
-export const Post = ({ ...props }: PostProps) => {
-  const { user, image_url, caption, location, created_at, likes_count, comments, tags } = props
-
+export const ImgPost = ({ ...props }: UnsplashPhoto) => {
+  const { alt_description, created_at, description, likes, urls, user, topic_submissions } = props
 
   const [liked, setLiked] = useState(false);
   const [saved, setSaved] = useState(false);
+  const [likesCount, setLikesCount] = useState(likes);
   const [comment, setComment] = useState('');
-  const [showAllComments, setShowAllComments] = useState(false);
-  const [likesCount, setLikesCount] = useState(likes_count);
 
   const handleLike = () => {
     if (liked) {
@@ -38,13 +36,13 @@ export const Post = ({ ...props }: PostProps) => {
   };
 
   return (
-    <div className="max-w-md rounded shadow-xl border border-gray-300">
+    <div className="w-md rounded shadow-xl border border-gray-300">
       {/* 헤더 */}
       <div className="flex items-center justify-between p-3 border-b">
         <div className="flex items-center">
           {/* 프로필 */}
           <div className="w-8 h-8 rounded-full overflow-hidden bg-gray-200">
-            <img className="object-cover" src={user.profile_picture} />
+            <img className="object-cover" src={user.profile_image.large} />
           </div>
           {/* 유저 정보 */}
           <div className="ml-3">
@@ -52,7 +50,7 @@ export const Post = ({ ...props }: PostProps) => {
               <div className="font-semibold text-sm">{user.username}</div>
               <div className="text-gray-500 text-xs">{formatDate(new Date(created_at))}</div>
             </div>
-            <div className="text-xs text-gray-500">{location?.name}</div>
+            <div className="text-xs text-gray-500">{user.location}</div>
           </div>
         </div>
         <button>
@@ -61,8 +59,8 @@ export const Post = ({ ...props }: PostProps) => {
       </div>
 
       {/* 이미지 */}
-      <div className="w-full min-h-[31.25rem] bg-gray-50">
-        <img src={image_url} alt="Post" className="w-full" />
+      <div className="flex items-center w-full min-h-[31.25rem] bg-black">
+        <img src={urls.full} alt={alt_description ?? ""} className="w-full" />
       </div>
 
       {/* 액션 버튼 */}
@@ -90,40 +88,15 @@ export const Post = ({ ...props }: PostProps) => {
         {/* 캡션 */}
         <div className="mt-1">
           <span className="font-semibold text-sm">travel_lover</span>
-          <span className="text-sm ml-2">{caption}</span>
+          <span className="text-sm ml-2">{description}</span>
         </div>
 
         {/* 해시태그 */}
         <div className="text-blue-500 text-sm mt-1">
-          {tags.map((tag) => (
-            <span key={tag}>#{tag}</span>
+          {Object.entries(topic_submissions).map(([key]) => (
+            <span key={key} className="mr-2">#{key}</span>
           ))}
         </div>
-
-        {/* 댓글 */}
-        <button
-          className="text-gray-500 text-sm mt-2 cursor-pointer"
-          onClick={() => setShowAllComments(!showAllComments)}
-        >
-          댓글 {comments.length}개 {showAllComments ? '접기' : '모두 보기'}
-        </button>
-
-        {showAllComments && (
-          <div className="mt-2">
-            {comments.map((comment) => (
-              <div className="flex justify-between items-start mb-2" key={comment.id}>
-                <div>
-                  <div className="flex gap-1">
-                    <span className="font-semibold text-sm">{comment.user}</span>
-                    <span className="font-medium text-sm">{formatDate(new Date(comment.created_at))}</span>
-                  </div>
-                  <span className="text-sm">{comment.text}</span>
-                </div>
-                <Heart size={12} />
-              </div>
-            ))}
-          </div>
-        )}
       </div>
 
       {/* 댓글 입력 */}
