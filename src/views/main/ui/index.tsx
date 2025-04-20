@@ -3,11 +3,11 @@ import { getAllImagesByPage } from "../../../shared/apis/getAllPosts"
 import { UnsplashPhoto } from "../../../widgets/post/model"
 import { useInfiniteQuery } from "@tanstack/react-query"
 import { useState, useEffect } from "react"
-import { SearchResult } from "../model"
+import { SearchResult } from "../../../shared/utils/searchResult"
 
 export function Main() {
   const [searchQuery, setSearchQuery] = useState("")
-  const [result, setResult] = useState([])
+  const [result, setResult] = useState<UnsplashPhoto[]>([])
   const { data: posts } = useInfiniteQuery({
     queryKey: ['posts'],
     queryFn: getAllImagesByPage,
@@ -16,7 +16,7 @@ export function Main() {
   });
 
   useEffect(() => {
-    setResult(SearchResult(posts, searchQuery))
+    if (posts) setResult(SearchResult(posts, searchQuery))
   }, [posts, searchQuery])
 
   return (

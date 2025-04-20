@@ -13,10 +13,7 @@ const enableMocking = async () => {
 
     return worker.start({
       onUnhandledRequest: (request: Request, print) => {
-
-
-        // 그 외의 처리되지 않은 요청에 대해서는 경고 출력
-        print.warning()
+        // print.warning()
       }
     })
   }
