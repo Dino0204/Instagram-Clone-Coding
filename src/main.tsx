@@ -7,28 +7,11 @@ import { ReactQueryDevtools } from '@tanstack/react-query-devtools'
 
 const queryClient = new QueryClient()
 
-const enableMocking = async () => {
-  if (process.env.NODE_ENV === 'development') {
-    const { worker } = await import('./mocks/browser.ts')
-
-    return worker.start({
-      onUnhandledRequest: (request: Request, print) => {
-        // print.warning()
-      }
-    })
-  }
-  return
-
-}
-
-enableMocking().then(() => {
-  createRoot(document.getElementById('root')!).render(
-
-    <StrictMode>
-      <QueryClientProvider client={queryClient}>
-        <Router />
-        <ReactQueryDevtools />
-      </QueryClientProvider>
-    </StrictMode>
-  )
-}) 
+createRoot(document.getElementById('root')!).render(
+  <StrictMode>
+    <QueryClientProvider client={queryClient}>
+      <Router />
+      <ReactQueryDevtools />
+    </QueryClientProvider>
+  </StrictMode>
+)
