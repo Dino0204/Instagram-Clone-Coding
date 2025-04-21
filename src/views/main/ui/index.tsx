@@ -10,7 +10,7 @@ export function Main() {
   const { data: posts, fetchNextPage, hasNextPage, isFetchingNextPage } = useInfiniteQuery({
     queryKey: ['posts'],
     queryFn: ({ pageParam }) => getAllImagesByPage({ pageParam }),
-    getNextPageParam: (lastPage, allPages) => {
+    getNextPageParam: (allPages) => {
       return allPages.length + 1;
     },
     initialPageParam: 1
@@ -25,16 +25,15 @@ export function Main() {
   }, [posts, searchQuery])
 
   useEffect(() => {
-    window.scrollTo(0, 0)
     const currentTarget = target.current;
 
     return () => {
       if (currentTarget && hasNextPage && !isFetchingNextPage) {
-        console.log("타겟:", currentTarget);
+        console.log("등록:", currentTarget);
         observe(currentTarget);
       }
       else if (currentTarget && !hasNextPage) {
-        console.log("타겟 해제:", currentTarget);
+        console.log("해제:", currentTarget);
         unobserve(currentTarget)
       }
     }
@@ -47,7 +46,8 @@ export function Main() {
         {result?.map((post: UnsplashPhoto, index) => (
           <Post key={index} {...post} />
         ))}
-        <div className="w-full h-8 text-center" ref={target}>{isFetchingNextPage ? "로딩중..." : "로딩완료!"}</div>
+        {searchQuery ? ("") : (<div className="w-full h-8 text-center" ref={target}>{isFetchingNextPage ? "로딩중..." : "로딩완료!"}</div>)
+        }
       </main >
     </div >
   )
