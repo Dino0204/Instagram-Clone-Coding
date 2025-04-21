@@ -2,8 +2,9 @@ import { Search } from "lucide-react";
 import { useState } from "react";
 import { SearchProps } from "../../../shared/types/search";
 
-export function SearchInput({ searchQuery, setSearchQuery }: SearchProps) {
-  const [inputValue, setInputValue] = useState(searchQuery)
+export function SearchInput({ setSearchQuery }: SearchProps) {
+  const [inputValue, setInputValue] = useState("")
+
   const handleChange = (value: string) => {
     setInputValue(value)
     setSearchQuery(value)

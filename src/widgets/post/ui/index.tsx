@@ -87,7 +87,7 @@ export const Post = ({ ...props }: UnsplashPhoto) => {
 
         {/* 캡션 */}
         <div className="mt-1">
-          <span className="font-semibold text-sm">travel_lover</span>
+          <span className="font-semibold text-sm">{user.username}</span>
           <span className="text-sm ml-2">{description}</span>
         </div>
 
