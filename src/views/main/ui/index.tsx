@@ -44,8 +44,8 @@ export function Main() {
         {result?.map((post: UnsplashPhoto, index) => (
           <Post key={index} {...post} />
         ))}
-        {searchQuery ? ("") : (<div className="w-full h-8 text-center" ref={target}>{isFetchingNextPage ? "로딩중..." : "로딩완료!"}</div>)
-        }
+        {result.length === 0 && searchQuery && <div className="w-full h-8 text-center">검색 결과가 없습니다.</div>}
+        {searchQuery ? ("") : (<div className="w-full h-8 text-center" ref={target}>{isFetchingNextPage ? "로딩중..." : "로딩완료!"}</div>)}
       </main >
     </div >
   )
