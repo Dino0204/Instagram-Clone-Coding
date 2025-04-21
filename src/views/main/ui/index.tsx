@@ -45,7 +45,7 @@ export function Main() {
           <Post key={index} {...post} />
         ))}
         {result.length === 0 && searchQuery && <div className="w-full h-8 text-center">검색 결과가 없습니다.</div>}
-        {searchQuery ? ("") : (<div className="w-full h-8 text-center" ref={target}>{isFetchingNextPage ? "로딩중..." : "로딩완료!"}</div>)}
+        {searchQuery ? (<div>더 많은 게시물을 보시려면 검색어를 지워주세요.</div>) : (<div className="w-full h-8 text-center" ref={target}>{isFetchingNextPage ? "로딩중..." : "로딩완료!"}</div>)}
       </main >
     </div >
   )
