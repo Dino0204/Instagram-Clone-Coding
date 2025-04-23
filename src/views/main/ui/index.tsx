@@ -10,8 +10,7 @@ export function Main() {
   const { data: posts, fetchNextPage, hasNextPage, isFetchingNextPage } = useInfiniteQuery({
     queryKey: ['posts'],
     queryFn: ({ pageParam }) => getAllImagesByPage({ pageParam }),
-    getNextPageParam: (lastPage, allPages) => lastPage.length === 0 ? undefined : allPages.length + 1
-    ,
+    getNextPageParam: (lastPage, allPages) => lastPage.length === 0 ? undefined : allPages.length + 1,
     initialPageParam: 1
   });
   const [searchQuery, setSearchQuery] = useState("")
